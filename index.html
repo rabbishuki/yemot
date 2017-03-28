@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="shortcut icon" href="#">
+        <title>כניסה למערכת </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <img src="/images/logo.png" width="100%">
+                <form class="register-form">
+                    <input id="r_user" type="text" placeholder="שם משתמש" />
+                    <input id="r_pass" type="password" placeholder="סיסמא" />
+                    <input id="r_email" type="text" placeholder="אימייל" />
+                    <button id="create-account">צור חשבון</button>
+                    <p class="message">כבר רשום?
+                        <a href="#">התחבר למערכת</a>
+                    </p>
+                </form>
+                <form class="login-form">
+                    <input id="l_user" type="text" placeholder="שם משתמש" />
+                    <input id="l_pass" type="password" placeholder="סיסמא" />
+                    <button id="login">התחבר</button>
+                    <p class="message">לא רשום?
+                        <a href="#">צור חשבון</a>
+                    </p>
+                </form>
+                <div class="data" style="display: none;">
+                    <p>ברוך הבא</p>
+                    <input id="username" type="text" disabled />
+
+                    <p>יתרה:</p>
+                    <input id="units" type="text" disabled />
+
+                    <p>בתוקף עד:</p>
+                    <input id="expire" type="text" disabled />
+                    
+                    להחלפת סיסמא <a href="/">לחץ כאן</a>
+                </div>
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+
+</html>
